@@ -1,6 +1,6 @@
 {
   "name": "pre-commit-hook",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Pre commit hook for replacing classNames",
   "main": "index.js",
   "scripts": {
