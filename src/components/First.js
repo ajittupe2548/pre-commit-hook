@@ -2,11 +2,11 @@ import React from "react";
 import { getThemeClasses } from "../utils";
 
 const iconWrapperClasses = getThemeClasses(`
-    neutral-100;
+    neutral-200;
     display-flex;
-    border-color-blue;
+    border-color-neutral-200;
     justify-content-center;
-    bg-blue;
+    bg-neutral-200;
     align-items-center;
 `);
 

@@ -7,12 +7,10 @@ function replaceInFile(filePath) {
     let content = fs.readFileSync(filePath, 'utf8');
 
     // Regex to match getThemeClasses with template literals, including multiline
-    const regexGetThemeClasses = /getThemeClasses\s*\(\s*`([^`]*)`\s*\)|getThemeClasses\s*\(\s*'([^']*)'\s*\)|getThemeClasses\s*\(\s*"([^"]*)"\s*\)/gs;
+    const regexGetThemeClasses = /getThemeClasses\s*\(\s*(`[^`]*`|'[^']*'|"[^"]*")\s*\)/gs;
 
     // Replace classes within getThemeClasses
-    content = content.replace(regexGetThemeClasses, (match, p1, p2, p3) => {
-        const classes = p1 || p2 || p3;
-
+    content = content.replace(regexGetThemeClasses, (match, classes) => {
         // Replace each class within the template literal
         const updatedClasses = classes.replace(/\b(color-\w+|bg-\w+|border-color-\w+)\b/g, (className) => {
             return classMapping[className.trim()] || className.trim();
