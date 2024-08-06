@@ -1,7 +1,7 @@
 {
-  "name": "react-webpack-boilerplate",
+  "name": "pre-commit-hook",
   "version": "1.0.0",
-  "description": "A react boilerplate with webpack.",
+  "description": "Pre commit hook for replacing classNames",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --mode=development",
