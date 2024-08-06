@@ -35,6 +35,6 @@
     "webpack-dev-server": "^4.15.1"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": ["node src/scripts/replaceClassName.js", "git add"]
+    "src/**/*.{js,jsx,ts,tsx}": ["node scripts/replaceClassName.js", "git add"]
   }
 }
