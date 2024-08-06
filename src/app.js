@@ -1,10 +1,15 @@
 import React from 'react';
 
 import styles from  './app.scss';
+import First from './components/First';
+import Second from './components/Second';
 
 const app = () => {
     return (
-        <h1 className={styles.heading}>Learn WebPack!</h1>
+        <>
+            <First />
+            <Second />
+        </>
     )
 }
 

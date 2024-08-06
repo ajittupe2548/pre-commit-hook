@@ -1,0 +1,1 @@
+export const getThemeClasses = str => str;
