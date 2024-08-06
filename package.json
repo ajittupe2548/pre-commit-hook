@@ -23,20 +23,10 @@
     "css-loader": "^6.7.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.3",
-    "husky": "^9.1.4",
-    "lint-staged": "^15.2.8",
     "mini-css-extract-plugin": "^2.6.0",
     "sass-loader": "^12.6.0",
     "webpack": "^5.88.2",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.15.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": ["node scripts/replaceClassName.js", "git add"]
   }
 }
