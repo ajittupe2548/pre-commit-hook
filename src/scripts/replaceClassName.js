@@ -6,23 +6,28 @@ const classMapping = require('../../mapping');
 function replaceInFile(filePath) {
     let content = fs.readFileSync(filePath, "utf8");
 
-    // Regex to match getThemeClasses with a string literal argument
+    // Regex to match getThemeClasses with a string literal argument, including leading/trailing spaces
     const regexGetThemeClasses =
         /getThemeClasses\s*\(\s*`([^`]*)`\s*\)|getThemeClasses\s*\(\s*'([^']*)'\s*\)|getThemeClasses\s*\(\s*"([^"]*)"\s*\)/g;
 
-    // Regex to match class names with or without quotes
+    // Regex to match class names with or without quotes, including leading/trailing spaces
     const regexClassNames =
-        /(?:className\s*=\s*|['"`;])(\bcolor-\w+\b)(?=[\s'";`])/g;
+        /(?:className\s*=\s*|['"`;])\s*(\bcolor-\w+\b)\s*(?=[\s'";`])/g;
 
     // Replace getThemeClasses(`neutral-100`), getThemeClasses(`neutral-100`), etc.
     content = content.replace(regexGetThemeClasses, (match, p1, p2, p3) => {
         const className = p1 || p2 || p3;
-        return `getThemeClasses(\`${classMapping[className] || className}\`)`;
+        return `getThemeClasses(\`${
+            classMapping[className.trim()] || className.trim()
+        }\`)`;
     });
 
     // Replace standalone color-red, 'neutral-100', "neutral-100", etc.
     content = content.replace(regexClassNames, (match, className) => {
-        return match.replace(className, classMapping[className] || className);
+        return match.replace(
+            className.trim(),
+            classMapping[className.trim()] || className.trim()
+        );
     });
 
     fs.writeFileSync(filePath, content, "utf8");
