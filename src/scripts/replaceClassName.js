@@ -1,12 +1,12 @@
 const fs = require("fs");
 const path = require("path");
 
-// Function to replace 'ajit' with 'tupe' in className attributes
+// Function to replace `getThemeClasses(`neutral-100`)` with `getThemeClasses(`neutral-100`)`
 function replaceInFile(filePath) {
     const content = fs.readFileSync(filePath, "utf8");
     const updatedContent = content.replace(
-        /className\s*=\s*["']([^"']*)ajit([^"']*)["']/g,
-        'className="$1tupe$2"'
+        /getThemeClasses\s*\(\s*`color-red`\s*\)/g,
+        "getThemeClasses(`neutral-100`)"
     );
 
     if (content !== updatedContent) {
@@ -17,7 +17,6 @@ function replaceInFile(filePath) {
 
 // Get the list of files from lint-staged
 const files = process.argv.slice(2);
-console.log(`*****Output is :  => files:`, files)
 
 // Process each file
 files.forEach((filePath) => {
