@@ -25,9 +25,50 @@ function replaceInFile(filePath) {
     console.log(`Updated: ${filePath}`);
 }
 
+function getJsFiles(dir) {
+    let results = [];
+    const list = fs.readdirSync(dir);
+    list.forEach(file => {
+        file = path.resolve(dir, file);
+        const stat = fs.statSync(file);
+        if (
+            !(
+                file.includes('.git') ||
+                file.includes('.expo') ||
+                file.includes('.github') ||
+                file.includes('.idea') ||
+                file.includes('.vscode') ||
+                file.includes('assets') ||
+                file.includes('docs\\out') ||
+                file.includes('.next') ||
+                file.includes('node_modules') ||
+                file.includes('testing-app') ||
+                file.includes('_next')
+            )
+        ) {
+            if (stat && stat.isDirectory()) {
+                // Recurse into subdirectory
+                results = results.concat(getJsFiles(file));
+            } else if (
+                file.endsWith('.js') ||
+                file.endsWith('.mdx') ||
+                file.endsWith('.jsx')
+            ) {
+                // Add .js file to results
+                results.push(file);
+            }
+        }
+    });
+    return results;
+}
+
+// Provide the base directory
+const baseDir = path.resolve('src/');
+
 // Get the list of files from lint-staged
 // Gets the list of files from lint-staged, starting from the third argument because first two arguments are node and this script itself.
-const files = process.argv.slice(2);
+// const files = ['src\\components\\First.js'];
+const files = getJsFiles(baseDir);
 
 // Process each file
 files.forEach(filePath => {
