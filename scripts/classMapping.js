@@ -1,10 +1,56 @@
 // Mapping of classes to be replaced
 module.exports = {
-    "color-red": "neutral-100",
-    "color-blue": "neutral-200",
-    "border-color-red": "border-color-neutral-100",
-    "border-color-blue": "border-color-neutral-200",
-    "bg-red": "bg-neutral-100",
-    "bg-blue": "bg-neutral-200",
-    // Add other mappings as needed
+    /* Neutral */
+    "color-black": "neutral-1200",
+    "color-charcoal-dark": "neutral-1100",
+    "color-charcoal": "neutral-1000",
+    "color-dimGray": "neutral-900",
+    "color-darkGray": "neutral-800",
+    "color-silver": "neutral-700",
+    "color-lightGray": "neutral-600",
+    "color-gainsBoroGray": "neutral-500",
+    "color-whiteSmoke": "neutral-400",
+    "color-dimWhite": "neutral-300",
+    "color-whiteSmokeLight": "neutral-200",
+    "color-white": "neutral-100",
+    /* info */
+    "color-brown-darkest": "info-1100",
+    "color-brown-dark": "info-1000",
+    "color-mediumBrown": "info-900",
+    "color-brown": "info-700",
+    "color-brown-light": "info-500",
+    "color-offBrown": "info-300",
+    /* Accent / Brand */
+    "color-blue-darkest": "accent-1100",
+    "color-blue-dark": "accent-1000",
+    "color-blue": "accent-900",
+    "color-blue-light": "accent-800",
+    "color-light-blue-base": "accent-400",
+    /* Secondary */
+    "color-teal-dark": "secondary-1000",
+    "color-teal": "secondary-900",
+    "color-teal-light": "secondary-700",
+    "color-teal-lightest": "secondary-400",
+    "color-aquaTeal": "secondary-300",
+    /* Primary */
+    "color-red-darkest": "primary-1100",
+    "color-red-dark": "primary-1000",
+    "color-red": "primary-900",
+    "color-red-light": "primary-700",
+    "color-red-lightest": "primary-400",
+    "color-red-redRose": "primary-300",
+    /* Misc */
+    "color-blackRussian": "misc-500",
+    "color-edenBlue": "misc-400",
+    "color-gothic": "misc-300",
+    "color-brightTurquoise": "misc-200",
+    "color-transparent": "misc-100",
+    /* Gradient */
+    "bg-gradient-charcoal-light": "bg-gradient-neutral-1000",
+    "bg-gradient-charcoal-light-reverse": "bg-gradient-neutral-1000-reverse",
+    "bg-gradient-charcoal": "bg-gradient-neutral-1000-dark",
+    "bg-gradient-charcoal-dark": "bg-gradient-neutral-1200",
+    "bg-gradient-charcoal-dark-left": "bg-gradient-neutral-1200-left",
+    "bg-gradient-black-reverse": "bg-gradient-neutral-1200-light",
+    "bg-gradient-red-light-reverse": "bg-gradient-primary-900",
 };
