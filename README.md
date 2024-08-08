@@ -30,3 +30,26 @@ Husky is a tool that makes it easy to manage Git hooks in a project. Git hooks a
 [GitHub](https://github.com/lint-staged/lint-staged)
 
 lint-staged is a tool that runs linters (or other scripts) on staged files in Git. This means only the files that are going to be committed are linted, improving performance and ensuring only relevant files are checked.
+
+## fs
+
+[Docs](https://nodejs.org/api/fs.html)
+
+The node:fs module enables interacting with the file system in a way modeled on standard POSIX functions.
+
+-   Two types: Asynchronous and Synchronous
+
+Common use for File System module:
+
+-   Read Files
+    -   fs.readFile
+    -   fs.readFileSync
+-   Write Files
+    -   fs.writeFile
+    -   fs.writeFileSync
+-   Read the content of directory
+    -   fs.readdir
+    -   fs.readdirSync
+-   Get Stats
+    -   fs.stat
+    -   fs.statSync
