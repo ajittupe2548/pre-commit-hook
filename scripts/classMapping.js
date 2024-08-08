@@ -49,12 +49,12 @@ module.exports = {
     "border-color-black": "neutral-1200",
     "border-color-charcoal-dark": "neutral-1000",
     "border-color-charcoal": "neutral-1000",
-    "border-color-dimGray": "neutral-900",
+    "border-color-dimGray": "neutral-800",   // oxygen only
     "border-color-darkGray": "neutral-800",
     "border-color-silver": "neutral-700",
     "border-color-lightGray": "neutral-600",
     "border-color-gainsBoroGray": "neutral-500",
-    "border-color-whiteSmoke": "neutral-400",
+    "border-color-whiteSmoke": "neutral-500",   // oxygen only
     "border-color-dimWhite": "neutral-300",
     "border-color-whiteSmokeLight": "neutral-200",
     "border-color-white": "neutral-100",
@@ -96,12 +96,12 @@ module.exports = {
     "bg-charcoal-dark": "neutral-1000",
     "bg-charcoal": "neutral-1000",
     "bg-dimGray": "neutral-900",
-    "bg-darkGray": "neutral-800",
+    "bg-darkGray": "neutral-900",   // oxygen only
     "bg-silver": "neutral-700",
     "bg-lightGray": "neutral-600",
     "bg-gainsBoroGray": "neutral-500",
     "bg-whiteSmoke": "neutral-400",
-    "bg-dimWhite": "neutral-300",
+    "bg-dimWhite": "neutral-200",   // oxygen only
     "bg-whiteSmokeLight": "neutral-200",
     "bg-white": "neutral-100",
     /* info */
