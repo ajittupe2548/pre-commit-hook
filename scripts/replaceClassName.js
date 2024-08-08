@@ -8,7 +8,7 @@ function replaceInFile(filePath) {
     let content = fs.readFileSync(filePath, 'utf8');
 
     // regular expression to match getThemeClassesfunction calls with template literals, single quotes, or double quotes. Thegflag enables global matching, and thesflag allows the dot.` to match newlines.
-    const regexGetThemeClasses = /getThemeClasses\s*\(\s*(`[^`]*`|'[^']*'|"[^"]*")\s*\)/gs;
+    const regexGetThemeClasses = /getThemeClasses\s*\(\s*(`[^`]*`)\s*\)/gs;
 
     // Replace classes within getThemeClasses i.e. get instances of getThemeClasses(``) classes contains first matching group from above regex
     content = content.replace(regexGetThemeClasses, (match, classes) => {
