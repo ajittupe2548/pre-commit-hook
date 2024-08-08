@@ -2,7 +2,7 @@
 module.exports = {
     /* Neutral */
     "color-black": "neutral-1200",
-    "color-charcoal-dark": "neutral-1100",
+    "color-charcoal-dark": "neutral-1000",
     "color-charcoal": "neutral-1000",
     "color-dimGray": "neutral-900",
     "color-darkGray": "neutral-800",
@@ -47,7 +47,7 @@ module.exports = {
     "color-transparent": "misc-100",
     /* Border Neutral */
     "border-color-black": "neutral-1200",
-    "border-color-charcoal-dark": "neutral-1100",
+    "border-color-charcoal-dark": "neutral-1000",
     "border-color-charcoal": "neutral-1000",
     "border-color-dimGray": "neutral-900",
     "border-color-darkGray": "neutral-800",
@@ -75,6 +75,7 @@ module.exports = {
     "border-color-teal-dark": "secondary-1000",
     "border-color-teal": "secondary-900",
     "border-color-teal-light": "secondary-700",
+    "border-color-riptide": "secondary-700",
     "border-color-teal-lightest": "secondary-400",
     "border-color-aquaTeal": "secondary-300",
     /* Primary */
@@ -92,7 +93,7 @@ module.exports = {
     "border-color-transparent": "misc-100",
     /* BG Neutral */
     "bg-black": "neutral-1200",
-    "bg-charcoal-dark": "neutral-1100",
+    "bg-charcoal-dark": "neutral-1000",
     "bg-charcoal": "neutral-1000",
     "bg-dimGray": "neutral-900",
     "bg-darkGray": "neutral-800",
