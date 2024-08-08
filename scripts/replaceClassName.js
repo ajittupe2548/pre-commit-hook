@@ -4,10 +4,10 @@ const classMapping = require('./classMapping'); // Adjust the path as needed
 
 // Function to replace classes based on the mapping
 function replaceInFile(filePath) {
-    //  Reads the file at the given filePath synchronously and stores it as a string
+    // Read the file at the given filePath synchronously and store it as a string
     let content = fs.readFileSync(filePath, 'utf8');
 
-    // regular expression to match getThemeClassesfunction calls with template literals, single quotes, or double quotes. Thegflag enables global matching, and thesflag allows the dot.` to match newlines.
+    // Regular expression to match getThemeClasses function calls with template literals using backticks. The g flag enables global matching, and the s flag allows the dot.` to match newlines.
     const regexGetThemeClasses = /getThemeClasses\s*\(\s*(`[^`]*`)\s*\)/gs;
 
     // Replace classes within getThemeClasses i.e. get instances of getThemeClasses(``) classes contains first matching group from above regex
@@ -20,6 +20,7 @@ function replaceInFile(filePath) {
         return match.replace(classes, updatedClasses);
     });
 
+    // Write the updated content back to the file
     fs.writeFileSync(filePath, content, 'utf8');
     console.log(`Updated: ${filePath}`);
 }
