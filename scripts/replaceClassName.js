@@ -13,7 +13,7 @@ function replaceInFile(filePath) {
     // Replace classes within getThemeClasses i.e. get instances of getThemeClasses(``) classes contains first matching group from above regex
     content = content.replace(regexGetThemeClasses, (match, classes) => {
         // Replace each class within the template literal i.e. replace color-red with color-neutral-100
-        const updatedClasses = classes.replace(/\b(color-\w+|bg-\w+|border-color-\w+)\b/g, (className) => {
+        const updatedClasses = classes.replace(/\b(color-\w+(-\w+)?|bg-\w+(-\w+)?|border-color-\w+(-\w+)?)\b/g, (className) => {
             return classMapping[className.trim()] || className.trim();
         });
 
