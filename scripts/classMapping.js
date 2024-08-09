@@ -91,6 +91,18 @@ module.exports = {
     'silver': 'neutral-700',
     // 'azure': #ecf9f8,    #TODO: Discuss this with Shweta
 
+    /* bg-with-opacity */
+    'bg-black-10': 'bg-neutral-1200-10',
+    'bg-black-25': 'bg-neutral-1200-25',
+    'bg-black-50': 'bg-neutral-1200-50',
+    'bg-black-75': 'bg-neutral-1200-75',
+    'bg-black-90': 'bg-neutral-1200-90',
+    'bg-white-10': 'bg-neutral-100-10',
+    'bg-white-25': 'bg-neutral-100-25',
+    'bg-white-50': 'bg-neutral-100-50',
+    'bg-white-75': 'bg-neutral-100-75',
+    'bg-white-90': 'bg-neutral-100-90',
+
     /* border-neutral */
     'border-color-black': 'border-color-neutral-1200',
     'border-color-charcoal-dark': 'border-color-neutral-1000',
@@ -182,17 +194,7 @@ module.exports = {
     'bg-gothic': 'bg-misc-300',
     'bg-brightTurquoise': 'bg-misc-200',
     'bg-transparent': 'bg-misc-100',
-    /* bg-with-opacity */
-    'bg-black-10': 'bg-neutral-1200-10',
-    'bg-black-25': 'bg-neutral-1200-25',
-    'bg-black-50': 'bg-neutral-1200-50',
-    'bg-black-75': 'bg-neutral-1200-75',
-    'bg-black-90': 'bg-neutral-1200-90',
-    'bg-white-10': 'bg-neutral-100-10',
-    'bg-white-25': 'bg-neutral-100-25',
-    'bg-white-50': 'bg-neutral-100-50',
-    'bg-white-75': 'bg-neutral-100-75',
-    'bg-white-90': 'bg-neutral-100-90',
+
     /* Gradient */
     'bg-gradient-charcoal-light': 'bg-gradient-neutral-1000',
     'bg-gradient-charcoal-light-reverse': 'bg-gradient-neutral-1000-reverse',
