@@ -30,7 +30,6 @@ module.exports = {
     "color-red": "color-primary-900",
     "color-red-dark": "color-primary-1000",
     "color-red-darkest": "color-primary-1100",
-    // 'purple': #c33764,   #TODO: Discuss this with Shweta
     "color-brown-light": "color-info-500",
     "color-brown": "color-info-700",
     "color-brown-dark": "color-info-1000",
@@ -89,9 +88,9 @@ module.exports = {
     "bg-blue-darkest": "bg-accent-1100",
     "bg-charcoal": "bg-neutral-900",
     "bg-silver": "bg-neutral-700",
-    // 'azure': #ecf9f8,    #TODO: Discuss this with Shweta
+    "bg-azure": "bg-secondary-300",
 
-    /* bg-with-opacity */
+    // bg-with-opacity
     "bg-black-10": "bg-neutral-1200-10",
     "bg-black-25": "bg-neutral-1200-25",
     "bg-black-50": "bg-neutral-1200-50",
@@ -103,16 +102,16 @@ module.exports = {
     "bg-white-75": "bg-neutral-100-75",
     "bg-white-90": "bg-neutral-100-90",
 
-    /* Gradient */ // #TODO: check this later
+    // Gradient
     "bg-gradient-charcoal-light": "bg-gradient-neutral-1000",
     "bg-gradient-charcoal-light-reverse": "bg-gradient-neutral-1000-reverse",
     "bg-gradient-charcoal": "bg-gradient-neutral-1000-dark",
     "bg-gradient-charcoal-dark": "bg-gradient-neutral-1200",
-    "bg-gradient-charcoal-dark-left": "bg-gradient-neutral-1000-left", // #TODO: Discuss this with Shweta
-    "bg-gradient-black-reverse": "bg-gradient-neutral-1200-light",
+    "bg-gradient-charcoal-dark-left": "bg-gradient-neutral-1000-left",
+    "bg-gradient-black-reverse": "bg-gradient-neutral-1000-light",
     "bg-gradient-red-light-reverse": "bg-gradient-primary-900",
 
-    /* border */
+    // border
     "border-color-transparent": "border-color-misc-100",
     "border-color-white": "border-color-neutral-100",
     "border-color-dimGray": "border-color-neutral-800",
@@ -133,7 +132,7 @@ module.exports = {
     "border-color-teal-lightest": "border-color-secondary-400",
     "border-color-teal-light": "border-color-secondary-700",
     "border-color-riptide": "border-color-secondary-700",
-    // 'mabel': #bfebeb,    // #TODO: Discuss this with Shweta
+    "border-color-mabel": "border-color-teal-lightest",
     "border-color-blue-darkest": "border-color-accent-1100",
     "border-color-blue-light": "border-color-accent-800",
     "border-color-blue": "border-color-accent-900",
