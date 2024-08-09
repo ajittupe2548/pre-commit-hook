@@ -55,13 +55,13 @@ module.exports = {
     "bg-transparent": "bg-misc-100",
     "bg-black": "bg-neutral-1200",
     "bg-white": "bg-neutral-100",
-    "bg-dimGray": "bg-neutral-800",// remove later added for test testing only
+    "bg-dimGray": "bg-neutral-800", // remove later added for test testing only
     "bg-darkGray": "bg-neutral-800",
     "bg-lightGray": "bg-neutral-600",
     "bg-gainsBoroGray": "bg-neutral-500",
     "bg-whiteSmoke": "bg-neutral-400",
     "bg-whiteSmokeLight": "bg-neutral-200",
-    "bg-dimWhite": "bg-neutral-200",// remove later added for test testing only
+    "bg-dimWhite": "bg-neutral-200", // remove later added for test testing only
     "bg-gothic": "bg-misc-300",
     "bg-blackRussian": "bg-misc-500",
     "bg-edenBlue": "bg-misc-400",
@@ -84,7 +84,7 @@ module.exports = {
     "bg-blue-light": "bg-accent-800",
     "bg-blue": "bg-accent-900",
     "bg-blue-dark": "bg-accent-1000",
-    "bg-light-blue-base": "bg-accent-400",
+    "bg-light-blue-base": "bg-accent-400", // TODO: check this
     "bg-blue-darkest": "bg-accent-1100",
     "bg-charcoal": "bg-neutral-900",
     "bg-silver": "bg-neutral-700",
@@ -114,12 +114,12 @@ module.exports = {
     // border
     "border-color-transparent": "border-color-misc-100",
     "border-color-white": "border-color-neutral-100",
-    "border-color-dimGray": "border-color-neutral-800",// remove later added for test testing only
+    "border-color-dimGray": "border-color-neutral-800", // remove later added for test testing only
     "border-color-darkGray": "border-color-neutral-800",
     "border-color-silver": "border-color-neutral-700",
     "border-color-lightGray": "border-color-neutral-600",
     "border-color-gainsBoroGray": "border-color-neutral-500",
-    "border-color-whiteSmoke": "border-color-neutral-500",// remove later added for test testing only
+    "border-color-whiteSmoke": "border-color-neutral-500", // remove later added for test testing only
     "border-color-gothic": "border-color-misc-300",
     "border-color-edenBlue": "border-color-misc-400",
     "border-color-teal": "border-color-secondary-900",
